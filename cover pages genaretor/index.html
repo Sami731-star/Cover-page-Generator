@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cover Page Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <div class="form-card">
+            <h1>Cover Page Generator</h1>
+            <p class="subtitle">Create professional academic cover pages</p>
+
+            <form id="coverForm">
+                <input type="text" id="title" placeholder="Project / Assignment Title" required>
+                <input type="text" id="name" placeholder="Student Name" required>
+                <input type="text" id="course" placeholder="Course / Subject">
+                <input type="text" id="institution" placeholder="Institution Name">
+                <input type="date" id="date">
+                <button type="submit">Generate Cover Page</button>
+            </form>
+        </div>
+
+        <div id="output" class="preview-card">
+            <div class="cover">
+                <h2 id="outTitle"></h2>
+                <hr>
+                <p id="outName"></p>
+                <p id="outCourse"></p>
+                <p id="outInstitution"></p>
+                <p id="outDate"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
